@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+:root {
+  --glass: rgba(255,255,255,0.35);
+  --bg: linear-gradient(135deg, #f8b6d2, #c5b4f3);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  font-family: -apple-system, BlinkMacSystemFont;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  padding: 20px 0;
+  font-family: 'Dancing Script';
+  font-size: 28px;
+  color: #333;
+}
+
+/* IOS GLASS CARD */
+.glass {
+  background: var(--glass);
+  backdrop-filter: blur(18px);
+  border-radius: 30px;
+  padding: 35px;
+  width: 320px;
+  margin: auto;
+  animation: fadeUp 0.8s ease;
+}
+
+/* BUTTONS */
+.ios-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 22px;
+  border: none;
+  background: #ff8fab;
+  color: white;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+.ios-btn:active {
+  transform: scale(0.96);
+}
+
+/* HOME CARDS */
+.card {
+  background: linear-gradient(135deg, #f6b1cc, #b8a7e8);
+  border-radius: 30px;
+  padding: 26px;
+  margin-bottom: 18px;
+  text-align: center;
+  font-family: 'Dancing Script';
+  font-size: 26px;
+  color: white;
+}
+
+.card:active {
+  transform: scale(0.96);
+}
+
+/* CONTENT */
+.content-box {
+  background: var(--glass);
+  backdrop-filter: blur(16px);
+  border-radius: 30px;
+  padding: 25px;
+  margin: 20px;
+  font-family: 'Dancing Script';
+  font-size: 22px;
+  color: #333;
+}
+
+/* PASSWORD DOTS */
+.password-wrapper {
+  position: relative;
+}
+
+#dots {
+  position: absolute;
+  top: 14px;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 6px;
+  pointer-events: none;
+}
+
+/* PHOTOS */
+.photo {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+/* ANIMATION */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
