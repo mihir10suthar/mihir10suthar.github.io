@@ -1,0 +1,58 @@
+body { margin:0; font-family: Playfair Display; }
+
+.page {
+  min-height:100vh;
+  background: linear-gradient(135deg,#ffd1dc,#e6c9ff);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.night { background:#0b0d2a; color:white; }
+
+.frame {
+  width:90%;
+  max-width:420px;
+  background:white;
+  border-radius:30px;
+  padding:35px;
+  text-align:center;
+  position:relative;
+}
+
+.frame::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:url("assets/frame.svg") no-repeat center/100% 100%;
+  pointer-events:none;
+}
+
+.script { font-family:Great Vibes; font-size:56px; margin:0; }
+.title { font-size:28px; }
+.date { opacity:.7 }
+
+input,button {
+  width:100%; padding:14px; margin:10px 0;
+  border-radius:25px; border:none;
+}
+
+button { background:#ff6fae; color:white; font-size:16px; }
+
+.tabs a {
+  display:block; margin:10px 0;
+  padding:15px; background:#ffd1dc;
+  border-radius:20px; text-decoration:none;
+  color:black;
+}
+
+.grid {
+  display:grid; grid-template-columns:1fr 1fr; gap:10px;
+}
+.grid img { width:100%; border-radius:15px; }
+
+figcaption { font-size:12px; margin-top:5px; }
+
+.list { text-align:left; }
+
+.no { pointer-events:none; opacity:.3; }
