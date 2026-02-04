@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f8c6dc, #cdb8f6);
+  color: #3b2d4a;
+}
+
+.page {
+  padding: 20px;
+}
+
+.card {
+  max-width: 420px;
+  margin: auto;
+  padding: 28px;
+  border-radius: 28px;
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.25);
+  animation: fadeUp 1s ease forwards;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  opacity: 0.75;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 16px;
+  border-radius: 18px;
+  border: none;
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+.btn {
+  width: 100%;
+  padding: 18px;
+  margin-top: 14px;
+  border-radius: 40px;
+  border: none;
+  font-size: 18px;
+  background: linear-gradient(135deg, #ff9fcf, #b79cff);
+  color: white;
+}
+
+.photo {
+  width: 100%;
+  border-radius: 22px;
+  margin-top: 18px;
+  cursor: pointer;
+}
+
+/* Fullscreen image */
+.fullscreen {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.95);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.fullscreen img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Proposal effects */
+.star {
+  position: fixed;
+  top: -20px;
+  font-size: 18px;
+  animation: fall 2.5s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+#moon {
+  position: fixed;
+  bottom: -120px;
+  right: 20px;
+  font-size: 90px;
+  animation: moon 5s ease forwards;
+}
+
+@keyframes moon {
+  to { bottom: 40px; }
+}
