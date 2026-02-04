@@ -1,0 +1,48 @@
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:linear-gradient(135deg,#fadadd,#c6b7e2);
+}
+
+.container{padding:20px}
+.card{
+padding:20px;
+margin:15px 0;
+border-radius:25px;
+background:linear-gradient(135deg,#f6b1c3,#b39ddb);
+color:white;
+text-align:center;
+font-size:18px;
+}
+
+.masonry{column-count:2;padding:15px}
+.item{break-inside:avoid;margin-bottom:15px}
+.item img{width:100%;border-radius:20px}
+.item p{opacity:0;transition:1s;text-align:center;font-style:italic}
+.item p.show{opacity:1}
+
+#viewer{
+position:fixed;inset:0;
+background:rgba(0,0,0,.9);
+display:flex;align-items:center;justify-content:center;
+opacity:0;pointer-events:none;transition:.4s
+}
+#viewer.show{opacity:1;pointer-events:auto}
+#viewer img{max-width:90%;border-radius:20px}
+
+#moon{
+position:fixed;
+bottom:-120px;
+left:50%;
+transform:translateX(-50%);
+width:140px;height:140px;
+border-radius:50%;
+background:#fff;
+box-shadow:0 0 80px rgba(255,255,255,.6);
+}
+.moon-rise{
+animation:rise 6s forwards;
+}
+@keyframes rise{
+to{bottom:20%}
+}
