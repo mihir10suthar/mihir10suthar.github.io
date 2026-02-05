@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<audio src="music/love.mp3" autoplay loop></audio>
+
+<!-- Secret Page -->
+<div id="secretPage" class="page center">
+  <h1>Ankita ❤️ Mihir</h1>
+  <p class="secret-text">
+    There is something my heart wants to ask you…
+  </p>
+  <div class="timer-circle">
+    <span id="countdown">10</span>
+  </div>
+</div>
+
+<!-- Question Page -->
+<div id="questionPage" class="page center hidden">
+  <h2 class="big-question">Will you marry me?</h2>
+  <button class="yes-btn" onclick="sayYes()">YES ❤️</button>
+  <button class="no-btn">NO 😅</button>
+</div>
+
+<!-- Yes Page -->
+<div id="yesPage" class="page center hidden">
+  <h1>She Said YES 💍🎉</h1>
+  <p class="secret-text">
+    You are my today, my tomorrow, and my forever.
+  </p>
+  <a href="tel:+919638741010" class="call-btn">📞 Call Mihir</a>
+</div>
+
+<script src="confetti.js"></script>
+<script>
+let t=10;
+const c=document.getElementById("countdown");
+const i=setInterval(()=>{
+  t--; c.innerText=t;
+  if(t===0){
+    clearInterval(i);
+    secretPage.classList.add("hidden");
+    questionPage.classList.remove("hidden");
+  }
+},1000);
+
+function sayYes(){
+  questionPage.classList.add("hidden");
+  yesPage.classList.remove("hidden");
+  startConfetti();
+}
+</script>
+</body>
+</html>
