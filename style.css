@@ -1,0 +1,46 @@
+body{
+margin:0;
+font-family:Georgia, serif;
+background:linear-gradient(135deg,#ffd1dc,#c3d9ff);
+min-height:100vh;
+}
+
+.page,.lock-box{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+padding:20px;
+text-align:center;
+}
+
+.script{font-size:52px}
+
+input,button{
+width:90%;
+max-width:320px;
+padding:16px;
+font-size:18px;
+margin:10px;
+border-radius:30px;
+border:none;
+}
+
+.tabs a{
+width:90%;
+padding:18px;
+margin:10px;
+font-size:20px;
+border-radius:20px;
+background:rgba(255,255,255,0.6);
+text-decoration:none;
+color:black;
+}
+
+.counter-big span{
+font-size:48px;
+font-weight:bold;
+}
+
+.hidden{display:none}
