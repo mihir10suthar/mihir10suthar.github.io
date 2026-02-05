@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="inner-page swipe">
+<h1>Ankita ❤️ Mihir</h1>
+
+<div class="content-box">
+<p>Will you marry me? 💍</p>
+
+<button onclick="yes()">Yes 💖</button>
+<button id="no">No 🙈</button>
+
+<p id="msg" style="display:none">
+You just made me the happiest man alive 💕
+</p>
+
+<a href="tel:9638741010">📞 Call Mihir</a>
+</div>
+
+<script src="hearts.js"></script>
+<script>
+no.onmouseover=()=>{no.style.left=Math.random()*80+"%";}
+function yes(){msg.style.display="block";}
+</script>
+</body>
+</html>
