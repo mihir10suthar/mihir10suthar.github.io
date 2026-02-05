@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="style.css"></head>
+<body class="app center">
+<h1>Ankita ♥ Mihir</h1>
+
+<h2>Will you marry me?</h2>
+
+<button onclick="yes()">YES ❤️</button>
+<button onclick="no(this)">NO 😜</button>
+
+<script src="confetti.js"></script>
+<script src="fireworks.js"></script>
+<script>
+function yes(){
+ confetti();
+ fireworks();
+ alert("You just made me the happiest man ❤️");
+}
+function no(btn){
+ btn.style.position="absolute";
+ btn.style.left=Math.random()*80+"%";
+}
+</script>
+
+<script src="music.js"></script>
+</body>
+</html>
