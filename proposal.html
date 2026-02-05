@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="stylesheet" href="style.css"></head>
+<body>
+<div id="counter-bar"></div>
+<div class="app cinematic">
+<h1>Ankita ♥ Mihir</h1>
+<h2>Will you marry me?</h2>
+<button onclick="yes()">YES 💍</button>
+<button id="no">NO 🙈</button>
+<div id="secret" class="big-text" style="display:none">
+You are my forever. I choose you every day. ❤️
+<br><br>
+<a href="tel:9638741010">📞 Call Mihir</a>
+</div>
+</div>
+<script src="counter.js"></script>
+<script src="confetti.js"></script>
+<script src="fireworks.js"></script>
+<script>
+no.onmouseover=()=>{no.style.position="absolute";no.style.left=Math.random()*70+"%";}
+function yes(){fireworks();confetti();secret.style.display="block";}
+</script>
+</body>
+</html>
