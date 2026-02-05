@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Ankita ♥ Mihir</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Handwritten Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+</head>
+
+<body class="gradient-bg center-screen">
+
+  <div class="login-box" id="loginBox">
+    <h1 class="title">Ankita <span>♥</span> Mihir</h1>
+    <p class="subtitle">Unlock My Heart</p>
+
+    <input
+      type="text"
+      id="username"
+      placeholder="Username"
+      autocomplete="off"
+    />
+
+    <input
+      type="password"
+      id="password"
+      placeholder="Password"
+    />
+
+    <button onclick="login()">Enter</button>
+
+    <p class="hint">💗 Only she knows</p>
+  </div>
+
+  <script>
+    function login() {
+      const user = document.getElementById("username").value.trim().toLowerCase();
+      const pass = document.getElementById("password").value;
+
+      if (user === "ankita" && pass === "16091010") {
+        window.location.href = "unlock.html";
+      } else {
+        const box = document.getElementById("loginBox");
+        box.classList.add("shake");
+        setTimeout(() => box.classList.remove("shake"), 500);
+      }
+    }
+  </script>
+
+</body>
+</html>
